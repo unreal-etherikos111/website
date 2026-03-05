@@ -1,0 +1,257 @@
+<canvas_artifact id="eyzoi-final-no-form" title="ΕΥΖΩΗ CARE - Έκδοση χωρίς Φόρμα" type="text/html">
+
+<!DOCTYPE html>
+
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ΕΥΖΩΗ CARE - Φροντίδα Ηλικιωμένων</title>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<style>
+:root {
+--primary-color: #00703c;
+--secondary-color: #005a8d;
+--accent-color: #f37021;
+--light-bg: #f9fbf9;
+--text-color: #333;
+}
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+        color: var(--text-color);
+        background-color: var(--light-bg);
+    }
+
+    /*navigate*/
+    nav {
+        background: white;
+        padding: 0.5rem 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 150px; 
+        width: auto;
+        transition: transform 0.3s;
+    }
+
+    .nav-links {
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-links li {
+        margin-left: 25px;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-weight: 600;
+    }
+
+    /*hero*/
+    .hero {
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+                    url('hero-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 1rem;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
+
+    /*services*/
+    .services {
+        padding: 5rem 5%;
+        text-align: center;
+    }
+    
+    .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+@media (max-width: 1024px) {
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+    .service-card {
+        background: white;
+        padding: 2.5rem;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        border-bottom: 4px solid var(--primary-color);
+    }
+
+    .service-card i {
+        font-size: 3.5rem;
+        color: var(--secondary-color);
+        margin-bottom: 1.5rem;
+    }
+
+    /*contact*/
+    .contact {
+        background: white;
+        padding: 5rem 5%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contact-info {
+        max-width: 600px;
+    }
+
+    .contact h2 {
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 1.2rem;
+        margin: 20px 0;
+    }
+
+    .contact-info i {
+        color: var(--primary-color);
+        margin-right: 10px;
+    }
+
+    /*buttons */
+    .btn {
+        background: var(--primary-color);
+        color: white;
+        padding: 14px 30px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    footer {
+        background: var(--secondary-color);
+        color: white;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    @media (max-width: 768px) {
+        .hero h1 { font-size: 2.2rem; }
+        .nav-links { display: none; }
+    }
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">
+        <img src="eyzwh.png" alt="ΕΥΖΩΗ CARE Logo">
+    </div>
+    <ul class="nav-links">
+        <li><a href="#home">Αρχική</a></li>
+        <li><a href="#services">Υπηρεσίες</a></li>
+        <li><a href="#contact">Επικοινωνία</a></li>
+    </ul>
+</nav>
+
+<section class="hero" id="home">
+    <h1>Φροντίδα με Αγάπη</h1>
+    <p>Στην ΕΥΖΩΗ CARE είμαστε δίπλα σε εσας και τους αγαπημένους σας προσφέροντας υπηρεσίες υγείας, φροντίδας και υποστήριξης κατ'οικον.</p>
+    <p>Το έμπειρο προσωπικό μας αποτελείται από νοσηλευτές, φυσικοθεραπευτές, φροντιστές και τεχνικούς έτοιμους να ανταποκριθούν στις ανάγκες σας με διακριτότητα και σεβασμό.</p>
+    <a href="#contact" class="btn">Επικοινωνήστε μαζί μας</a>
+</section>
+
+<section class="services" id="services">
+    <h2>Οι Υπηρεσίες μας</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <i class="fas fa-user-nurse"></i>
+            <h3>Νοσηλευτική Φροντίδα</h3>
+            <p>Εξειδικευμένοι νοσηλευτές για την παρακολούθηση της υγείας και τη σωστή διαχείριση της καθημερινότητας  (αιμοληψία και παράδοση σε μικροβιολογικο εργαστήριο, ενέσεις/εμβολιασμός, τοποθέτηση ουροκαθετήρσα κλπ).</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-walking"></i>
+            <h3>Φυσικοθεραπεία & Κινησιοθεραπεία</h3>
+            <p>Ολοκληρωμένες υπηρεσίες αξιολόγησης και αποκατάστασης μυοσκελετικών-νευρολογικών δυσλειτουργιών, με σύγχρονες θεραπευτικές μεθόδους, από Φυσικοθεραπευτες.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-house-user"></i>
+            <h3>Φύλαξη - Συντροφιά - Βοήθεια στο Σπίτι</h3>
+            <p>Υπηρεσίες κατ οίκον φροντίδας, υποστήριξης και συντροφιάς, από έμπειρους συνεργάτες.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-money-bill"></i>
+            <h3>Διοικητική Διεκπεραίωση</h3>
+            <p>Πληρωμή λογαριασμών κοινής ωφελείας (ρεύμα, νερό, τηλεφωνία), Έκδοση πιστοποιητικών, Αιτήσεις σε δημόσιους φορείς.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-car-side"></i>
+            <h3>Συνοδεία σε Ιατρούς & Υπηρεσίες</h3>
+            <p>Συνοδεία σε ιατρικά ραντεβού, νοσοκομεία και δημόσιες υπηρεσίες.</p>
+        </div>
+        <div class="service-card">
+            <i class="fas fa-tools"></i>
+            <h3>Τεχνική Υποστήριξη</h3>
+            <p>Επισκευές ηλεκτρονικών συσκευών και ψηφιακή βοήθεια.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <div class="contact-info">
+        <h2>Επικοινωνήστε μαζί μας</h2>
+        <p>Είμαστε εδώ για να σας ακούσουμε και να βρούμε μαζί την καλύτερη λύση φροντίδας.</p>
+        <p><i class="fas fa-phone-alt"></i> +30 6975800120</p>
+        <p><i class="fas fa-envelope"></i> evzoi.care@gmail.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Βασ. Όλγας 52, Καλαμάτα, 24100</p>
+        <p>ΕΥΖΩΗ CARE ΚΟΙΝ.Σ.ΕΠ ΑΡ. ΓΕΜΗ: 189126261000<br> ΑΓΕΜΚΟ: 000286503121</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 ΕΥΖΩΗ CARE - Ποιότητα Ζωής στην Τρίτη Ηλικία.</p>
+</footer>
+</body>
+</html>
+</canvas_artifact>
