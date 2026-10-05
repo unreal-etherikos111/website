@@ -133,10 +133,37 @@
         display: flex;
         justify-content: center;
         text-align: center;
+        position: relative;
     }
 
     .contact-info {
         max-width: 600px;
+    }
+
+    /*ya ESPA*/
+    .espa-logo {
+        position: absolute;
+        bottom: 30px;
+        right: 5%;
+    }
+
+    .espa-logo img {
+        max-width: 300px; 
+        height: auto;
+    }
+
+    @media (max-width: 1024px) {
+        .contact {
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 2rem;
+        }
+        .espa-logo {
+            position: relative;
+            bottom: auto;
+            right: auto;
+            margin-top: 40px;
+        }
     }
 
     .contact h2 {
@@ -246,6 +273,9 @@
         <p><i class="fas fa-envelope"></i> evzoi.care@gmail.com</p>
         <p><i class="fas fa-map-marker-alt"></i> Κρήτης & Αντιλοχου 9, Καλαμάτα, 24100</p>
         <p>ΕΥΖΩΗ CARE ΚΟΙΝ.Σ.ΕΠ ΑΡ. ΓΕΜΗ: 189126261000<br> ΑΓΕΜΚΟ: 000286503121</p>
+    </div>
+    <div class="espa-logo">
+        <img src="1790161803278blob.jpg" alt="ΕΣΠΑ">
     </div>
 </section>
 
