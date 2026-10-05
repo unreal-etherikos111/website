@@ -129,7 +129,7 @@
     /*contact*/
     .contact {
         background: white;
-        padding: 5rem 5%;
+        padding: 5rem 5% 12rem 5%; 
         display: flex;
         justify-content: center;
         text-align: center;
@@ -138,13 +138,30 @@
 
     .contact-info {
         max-width: 600px;
+        margin: 0 auto;
     }
 
-    /*ya ESPA*/
+    .contact h2 {
+        color: var(--primary-color);
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-info p {
+        font-size: 1.2rem;
+        margin: 20px 0;
+    }
+
+    .contact-info i {
+        color: var(--primary-color);
+        margin-right: 10px;
+    }
+
     .espa-logo {
         position: absolute;
-        bottom: 30px;
+        bottom: 20px;
         right: 5%;
+        max-width: 320px; 
+        text-align: center; 
     }
 
     .espa-logo img {
@@ -152,17 +169,24 @@
         height: auto;
     }
 
-    @media (max-width: 1024px) {
+    .espa-text {
+        font-size: 0.75rem; 
+        line-height: 1.3;
+        margin-top: 10px;
+        color: #555; 
+    }
+
+    @media (max-width: 1200px) {
         .contact {
+            padding: 5rem 5%; 
             flex-direction: column;
             align-items: center;
-            padding-bottom: 2rem;
         }
         .espa-logo {
             position: relative;
             bottom: auto;
             right: auto;
-            margin-top: 40px;
+            margin-top: 50px; 
         }
     }
 
@@ -225,7 +249,7 @@
 <section class="hero" id="home">
     <h1>Φροντίδα με Αγάπη</h1>
     <p>Στην ΕΥΖΩΗ CARE είμαστε δίπλα σε εσας και τους αγαπημένους σας προσφέροντας υπηρεσίες υγείας, φροντίδας και υποστήριξης κατ'οικον.</p>
-    <p>Το έμπειρο προσωπικό μας αποτελείται από νοσηλευτές, φυσικοθεραπευτές, φροντιστές και τεχνικούς έτοιμους να ανταποκριθούν στις ανάγκες σας με διακριτότητα και σεβασμό.</p>
+    <p>Το έμπειρο προσωπικό μας αποτελείται από νοσηλευτές, φυσικοθεραπευτές, φροντιστές και τεχνικούς έτοιμους να ανταποκριθούν στις ανάγκες σας με σεβασμό.</p>
     <a href="#contact" class="btn">Επικοινωνήστε μαζί μας</a>
 </section>
 
@@ -276,11 +300,15 @@
     </div>
     <div class="espa-logo">
         <img src="1790161803278blob.jpg" alt="ΕΣΠΑ">
+        <p class="espa-text">
+            ΕΣΠΑ 2021–2027 | Πρόγραμμα «Πελοπόννησος 2021–2027»<br>
+            Πράξη: ΕΥΖΩΗ CARE – Κατ’ οίκον υπηρεσίες υγείας και φροντίδας, οικιακής και τεχνικής υποστήριξης, διοικητικής διεκπεραίωσης και ψηφιακής ενδυνάμωσης.
+        </p>
     </div>
 </section>
 
 <footer>
-    <p>&copy; 2026 ΕΥΖΩΗ CARE - Ποιότητα Ζωής στην Τρίτη Ηλικία.</p>
+    <p>&copy; 2026 ΕΥΖΩΗ CARE - Κατ'οίκον υπηρεσίες Υγείας, Φροντίδας και Υποστήριξης.</p>
 </footer>
 </body>
 </html>
